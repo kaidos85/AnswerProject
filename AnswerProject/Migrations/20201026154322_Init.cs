@@ -68,12 +68,12 @@ namespace AnswerProject.Migrations
                 columns: new[] { "Id", "DataType", "Enumeration", "Text" },
                 values: new object[,]
                 {
-                    { 1L, "string", null, "Введите имя" },
+                    { 1L, "text", null, "Введите имя" },
                     { 2L, "number", null, "Введите возраст" },
                     { 3L, "enum", "муж;жен;неопр", "Введите пол" },
                     { 4L, "date", null, "Введите дату рождения" },
                     { 5L, "enum", "холост/не замужем;женат/замужем;разведен/а", "Введите семейное положение" },
-                    { 6L, "bool", null, "Любите ли вы программировать" }
+                    { 6L, "checkbox", null, "Любите ли вы программировать" }
                 });
 
             migrationBuilder.CreateIndex(
